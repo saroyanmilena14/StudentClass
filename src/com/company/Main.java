@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner commandLine = new Scanner(System.in);
-        System.out.print("Input x ");
+        System.out.print("Input the value for x ");
         int x = commandLine.nextInt();
         int[] arr = {25,44};
 
