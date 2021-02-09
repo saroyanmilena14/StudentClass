@@ -12,7 +12,7 @@ public class Arrays {
         };
         int i;
         int j;
-        for ( i=0, j=3 ;  i<=3 && j>=0;  i++, j--) {
+        for ( i=0, j=matrix[0].length-1 ;  i< matrix.length && j>=0;  i++, j--) {
             System.out.println(matrix[i][j] + " ");
         }
     }
