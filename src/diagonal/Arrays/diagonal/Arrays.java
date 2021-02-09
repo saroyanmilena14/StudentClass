@@ -1,5 +1,5 @@
 package diagonal.Arrays.diagonal;
-
+//ex1 . printing the  2nd diagonal
 public class Arrays {
 
     public static void main(String[] args) {
@@ -16,4 +16,5 @@ public class Arrays {
             System.out.println(matrix[i][j] + " ");
         }
     }
+
 }
