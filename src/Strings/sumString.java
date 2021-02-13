@@ -3,18 +3,13 @@ package Strings;
 public class sumString {
 
     public static void main(String args[]) {
-        String str = "6+7+8+9+5+23+56";
+        String s = "2352+8425+3256";
+        String[] numArr = s.split("\\+");
         int sum = 0;
-        char plus = '+';
-        String S1 = "";
-        for (int i = 0; i < str.length(); i++) {
-            if ((str.charAt(i)) != plus) {
-                S1 = String.valueOf(str.charAt(i));
-            }
+        for (String strNum: numArr) {
+            sum = sum + Integer.parseInt(strNum);
         }
-           for(int j=0; j<S1.length();j++) {
-               sum+= Integer.parseInt(String.valueOf(S1.charAt(j)));
-               System.out.println(sum);
-           }
+        System.out.println(sum);
     }
 }
+//int a = c- '0'
