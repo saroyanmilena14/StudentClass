@@ -4,24 +4,24 @@ public class UppercaseToLowercase {
 
     public static void main(String args[]) {
         String original = "MAD world";
-        String blab = "";
+        String str = "";
+        int a;
+        char c;
         for (int i = 0; i < original.length(); i++) {
-            for (int j = 0; j < blab.length(); j++) {
-                char c = original.charAt(i);
-                int letter = (int) c;
-                if (letter >= 65 && letter <= 90) {
-                    letter += 32;
-                    char b = (char) letter;
-                    boolean Upper= true;
-                    blab += letter;
-                } else if (letter >= 97 && letter <= 122) {
-                    letter -= 32;
-                    char b = (char) letter;
-                    blab += letter;
-                }
+            a = original.charAt(i);
+            if (a >= 65 && a <= 90) {
+                a += 32;
+                c = (char) a;
+                str += c;
+            } else if (a >= 97 && a <= 122) {
+                a -= 32;
+                c = (char) a;
+                str += c;
+            } else {
+                str += ' ';
             }
-            }
-            System.out.println(blab);
         }
+            System.out.println(str);
 
-    }
+}
+}

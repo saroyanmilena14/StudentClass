@@ -12,4 +12,3 @@ public class sumString {
         System.out.println(sum);
     }
 }
-//int a = c- '0'
