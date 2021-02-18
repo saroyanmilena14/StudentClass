@@ -2,7 +2,7 @@ package Functions;
 //task 3-fibonacci
 public class fibonacci {
     public static void main (String args []){
-        fibonacci(6);
+        fibonacci(1);
 
     }
 
@@ -20,6 +20,9 @@ public class fibonacci {
                a=b;
                b=c;
             }
+        }
+            else {
+            System.out.println("not a valid input");
         }
     }
 }
