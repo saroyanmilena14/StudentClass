@@ -24,5 +24,6 @@ public class fibonacci {
             else {
             System.out.println("not a valid input");
         }
+            return;
     }
 }
