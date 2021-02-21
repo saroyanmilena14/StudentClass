@@ -1,21 +1,17 @@
 package Functions;
 
-public class overloadedFunctionDouble {
-    public static void main (String args[]) {
+public class overloadedFunctionDouble<sum> {
+    public static void main(String args[]) {
 
-       double arr[] = {3.4 , 5.6, 7.8, 4.9 , 56.2};
-        System.out.println(add(arr));
+        System.out.println(add(4.5 , 8.9, 6.7));
     }
 
 
-
-    static int add (double arr[]) {
-        double sum=0;
-        int result=0;
-        for(int i=0; i<arr.length; i++){
-            sum+= arr[i];
-            result = (int)sum;
+    static int add(double ...n) {
+        double sum = 0;
+        for (double i : n) {
+            sum += i;
         }
-        return result;
+        return (int) sum;
     }
 }
