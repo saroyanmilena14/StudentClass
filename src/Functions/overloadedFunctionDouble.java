@@ -9,7 +9,7 @@ public class overloadedFunctionDouble<sum> {
 
     static int add(double ...n) {
         double sum = 0;
-        for (double i : n) {
+        for (double i: n) {
             sum += i;
         }
         return (int) sum;
