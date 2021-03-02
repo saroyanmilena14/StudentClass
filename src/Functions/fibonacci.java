@@ -2,7 +2,7 @@ package Functions;
 //task 3-fibonacci
 public class fibonacci {
     public static void main (String args []){
-        fibonacci(1);
+        fibonacci(5);
 
     }
 
