@@ -17,5 +17,10 @@ public class Main1 {
         System.out.println(C2.getX());
         System.out.println(C2.getY());
         System.out.println(C2.getRadius());
+        Circle C3= new Circle();
+        C3.x=7;
+        C3.y=8;
+        System.out.println(C3.x);
+        System.out.println(C3.y);
     }
 }

@@ -21,7 +21,7 @@ public class TV {
     }
 
     public void setLength(double length2) {
-        if (length > 0 && length < 106) {
+        if (length2 > 0 && length2 < 106) {
             length = length2;
         } else {
             System.out.println("out of range");

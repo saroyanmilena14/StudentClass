@@ -6,7 +6,7 @@ import Classes.methods.TV.TV;
 public class Main {
      public static void main(String[] args) {
 
-     TV t1=new TV(109,"QLED", "Bony");
+     TV t1=new TV(100,"QLED", "Bony");
          System.out.println(t1.getLength());
 //         System.out.println(t1.getModel());
     // TV t2= new TV(50, 20, "LED","SAMSUNG");
