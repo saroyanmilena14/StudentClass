@@ -20,21 +20,16 @@ package Classes.methods.Circles;
 
         public double LengthofCircle() {
             double C = 0;
-            if (Radius > 0) {
-                C = 2 * 3.14 * Radius;
-            } else {
-                System.out.println("the value of radius is 0 or negative");
-            }
+            C = 2 * 3.14 * Radius;
+
             return C;
         }
 
         public double SofCircle() {
             double S = 0;
-            if (Radius > 0) {
+
                 S = 3.14 * (Radius * Radius);
-            } else {
-                System.out.println("the value of radius is 0 or negative");
-            }
+
             return S;
         }
 
@@ -50,12 +45,6 @@ package Classes.methods.Circles;
             return Radius;
         }
 
-        public double getX() {
-            return x;
-        }
 
-        public double getY() {
-            return y;
-        }
 
     }

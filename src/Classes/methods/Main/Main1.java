@@ -11,11 +11,11 @@ public class Main1 {
         System.out.println(C1.SofCircle());
         System.out.println(C2.SofCircle());
         System.out.println(C2.LengthofCircle());
-        System.out.println(C1.getX());
-        System.out.println(C1.getY());
+        System.out.println(C1.x);
+        System.out.println(C1.y);
         System.out.println(C1.getRadius());
-        System.out.println(C2.getX());
-        System.out.println(C2.getY());
+        System.out.println(C2.x);
+        System.out.println(C2.y);
         System.out.println(C2.getRadius());
         Circle C3= new Circle();
         C3.x=7;
