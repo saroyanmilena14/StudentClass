@@ -4,23 +4,21 @@ public class Student {
 
     private String name;
     private double rating;
-    public static double id;
+    private  int id;
+    private static int c;
+
 
 
 
     public Student(String name, double rating) {
         this.name = name;
         this.rating = rating;
-        id++;
+        c++;
+        id=c;
+    }
+    public int getId (){
+        return id;
     }
 
-    public Student() {
-        id++;
-    }
-
-    public Student(String n) {
-        name=n;
-        id++;
-    }
 }
 
