@@ -6,24 +6,44 @@ public class Author {
 
     private String name;
     private String surName;
-    private int yearOfBirth;
-    private Book[] books;
+    private Book[] book;
 
-    public Author (String name , String surName, int yearOfBirth, Book[] books ) {
-          this.name=name;
-          this.surName=surName;
-          this.yearOfBirth=yearOfBirth;
+    public Author (String name , String surName,  Book[] book ) {
+        setName(name);
+        this.surName = surName;
+        setBook(book);
+    }
+    public Book[] getBook() {
+        return book;
+    }
+    public void setBook(Book[] book) {
+        if(book.length > 0) {
+            this.book = book;
+        }
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
 
+            this.name = name;
+    }
+    public String getSurName() {
+        return surName;
+    }
+    public void setSurName(String surName) {
+        this.surName = surName;
     }
 
-      public void setBooks (Book [] books) {
-          if(books.length>0) {
-              this.books=books;
-          }
-      }
-      public Book[] getBooks () {
-        return books;
-      }
+    public Book getBook(String searchBook) {
+        for (int i = 0; i < book.length; i++) {
+            if (book[i].getTitle().equals(searchBook)) {
+                return book[i];
+            }
+        }
+        return null;
+    }
+
 
 
 }
