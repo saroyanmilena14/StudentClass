@@ -27,16 +27,16 @@ public class BookMain {
         }
         String Name2 = "The Great Gatsby";
         Book book2 =  a3.getBook(Name2);
-        if(book2!=null){
+        if(book2!=null) {
             book2.printBook();
-        }else {
+        } else {
             System.out.println("The book with name " + "'" + Name2 + "'" + " is not found");
         }
         String Name3= "Harry Potter";
         Book book3 =a3.getBook(Name3);
         if(book3!=null){
             book3.printBook();
-        }else {
+        }  else {
             System.out.println("The book with name " + "'" + Name3 + "'" + " is not found");
         }
 }
