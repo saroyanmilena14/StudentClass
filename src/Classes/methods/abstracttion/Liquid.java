@@ -2,19 +2,20 @@ package Classes.methods.abstracttion;
 
 abstract public class Liquid {
 
-    double tempOfBoiling;
+    private double tempOfBoiling;
 
     public Liquid(double tempOfBoiling){
         this.tempOfBoiling=tempOfBoiling;
     }
 
-    public void TempOfBoiling() {
 
-    }
+
+     abstract public double Density() ;
 
     public void GetAllFeatures() {
         System.out.println("tempBoiling:" + " " +tempOfBoiling);
     }
+
 
     public double getTempOfBoiling() {
        return tempOfBoiling;

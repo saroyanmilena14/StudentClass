@@ -2,27 +2,34 @@ package Classes.methods.abstracttion;
 
   public class Blood extends Liquid {
 
-      String bloodType;
-      String bloodCells;
+     private String bloodType;
+     private String bloodCells;
+     private double mass;
+     private double volume;
 
-      public Blood (double tempOfBoiling, String bloodType, String bloodCells) {
+      public Blood (double tempOfBoiling, String bloodType, String bloodCells, double mass, double volume) {
           super(tempOfBoiling);
           this.bloodType=bloodType;
           this.bloodCells=bloodCells;
+          this.mass=mass;
+          this.volume=volume;
       }
-
-
       @Override
-      public void TempOfBoiling() {
-          super.TempOfBoiling();
-          System.out.println("The boiling temperature of blood is"+ " " + tempOfBoiling );
+      public double Density (){
+          return mass/volume;
       }
+
+
       @Override
        public void GetAllFeatures() {
           super.GetAllFeatures();
           System.out.println("bloodType:"+ " "+ bloodType);
           System.out.println("bloodCells:"+ " "+ bloodCells);
+          System.out.println("mass:"+ " "+ mass);
+          System.out.println("volume:"+ " "+ volume);
       }
+
+
 
       public String getBloodType() {
           return bloodType;
@@ -41,5 +48,19 @@ package Classes.methods.abstracttion;
           this.bloodCells = bloodCells;
       }
 
+      public double getMass() {
+          return mass;
+      }
 
+      public void setMass(double mass) {
+          this.mass = mass;
+      }
+
+      public double getVolume() {
+          return volume;
+      }
+
+      public void setVolume(double volume) {
+          this.volume = volume;
+      }
   }
