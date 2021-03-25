@@ -17,8 +17,8 @@ public class InterfacesMovementMain {
         }
         Arrays.sort(movables);
         System.out.println();
-        for (Movable flyable : movables) {
-            System.out.println(flyable.toString());
+        for (Movable movable : movables) {
+            System.out.println(movable.toString());
         }
 
 
