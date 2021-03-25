@@ -2,7 +2,7 @@ package Classes.methods.FlyableInterfaces.FlyableClasses;
 
 import Classes.methods.FlyableInterfaces.Flyable;
 
-public class Airplane implements Flyable {
+public class Airplane implements  Flyable{
     private int speed;
     private String model;
 
@@ -42,5 +42,8 @@ public class Airplane implements Flyable {
         return a.getModel() == this.getModel();
     }
 
-
+    @Override
+    public String toString() {
+        return "Airplane's speed is"+ " "+speed + " " +",model is" + model;
+    }
 }

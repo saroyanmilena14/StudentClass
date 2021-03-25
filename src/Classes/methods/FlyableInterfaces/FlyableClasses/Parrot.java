@@ -38,4 +38,10 @@ public class Parrot implements Flyable {
         Parrot p = (Parrot) o;
         return p.getName() == this.getName();
     }
+
+    @Override
+    public String toString() {
+        return "Parrot's name is"+ " "+ name+ "and its color is"+ " "+ color;
+    }
+
 }

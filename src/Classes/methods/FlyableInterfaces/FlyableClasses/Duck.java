@@ -40,4 +40,9 @@ public class Duck implements Flyable {
         Duck d = (Duck) o;
         return d.getColor() == this.getColor();
     }
+
+    @Override
+    public String toString() {
+        return "The Duck is type of"+ " "+ type +", and its color is"+ " "+color;
+    }
 }
