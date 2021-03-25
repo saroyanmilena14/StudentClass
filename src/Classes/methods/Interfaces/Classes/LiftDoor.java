@@ -31,6 +31,12 @@ public class LiftDoor implements Movable, RightLeftMovable {
     public void moveLeft() {
         System.out.println("The door of the lift moves right as well.");
     }
+
+    @Override
+    public void Move() {
+        System.out.println("Moves by closing and opening its doors. ");
+    }
+
     @Override
     public int sp() {
         return speed;

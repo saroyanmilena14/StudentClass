@@ -10,6 +10,11 @@ public class Escalator implements Movable, ForwardMoveable, BackMovable {
 
 
     @Override
+    public void Move() {
+        System.out.println("Moves from the top to bottom or the opposite way.");
+    }
+
+    @Override
     public int sp() {
         return speed;
     }
