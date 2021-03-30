@@ -27,6 +27,7 @@ public class FLyableMain {
         Parrot [] parrots={P1, P2, P3};
         System.out.println(FindSecondArg(parrots,P1));
 
+
     }
 
 
