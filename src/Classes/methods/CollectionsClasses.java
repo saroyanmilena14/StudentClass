@@ -4,28 +4,30 @@ package Classes.methods;
 import Classes.methods.Student.Student;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class CollectionsClasses {
 
-        public static void main(String[] args) {
+
+    public static void main(String[] args) {
 
             ArrayList<Student> studentslist = new ArrayList<>();
-            studentslist.add(new Student("Mane",3.4));
-            studentslist.add(new Student("Meri", 3.21));
-            studentslist.add(new Student("Armen", 2.78));
-            studentslist.add(new Student("Nina", 3.65));
-            studentslist.add(4,new Student("Varduhi", 2.9));
+            studentslist.add(new Student("Mane", "Sargsyan", 3.5));
+            studentslist.add(new Student("Mane","Sargsyan",2.87));
+            studentslist.add(new Student("Armen","Sargsyan", 2.56));
+            studentslist.add(new Student("Mane","Sargsyan" ,3.9));
+            studentslist.add(new Student("Varduhi", "Vardanyan" ,3.21));
 
-            Student student1=new Student("Varduhi", 2.9);
-            Student student2=new Student("Mane", 3.4);
 
-            System.out.println(studentslist.size());
-            System.out.println(studentslist);
 
-            studentslist.remove(3);
-            System.out.println(studentslist);
-            boolean contain = studentslist.contains(student2);
-            System.out.println(contain);
+
+            HashSet<Student> uniqueElements = new HashSet<>(studentslist);
+            for (Student s: uniqueElements) {
+                System.out.println(s);
+                    System.out.println();
+            }
+
+
 
 }
 }
